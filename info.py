@@ -19,7 +19,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://graph.org/file/618acfd6d586b4e77648a.jpg https://graph.org/file/2546052341e93ef80b9e0.jpg https://graph.org/file/79fe451891a16f3f2b313.jpg https://graph.org/file/399ce43058c3aa92bedaf.jpg https://graph.org/file/82fe538b26507e6a48726.jpg https://graph.org/file/084bb001ce9224d7cabf6.jpg https://graph.org/file/9cae7cd54f4c8ff0cea2c.jpg https://graph.org/file/a80fc07fcf50692b4eadd.jpg https://graph.org/file/0e086e40eae077cace948.jpg https://graph.org/file/dee6566eb8def940c2006.jpg https://graph.org/file/b1dc43a6987881a7013d1.jpg https://graph.org/file/b61cd58a36bd77962ffa0.jpg https://graph.org/file/d3631ee5c76eaaf9f9262.jpg https://graph.org/file/c019648df7968f95b807b.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/618acfd6d586b4e77648a.jpg https://graph.org/file/2546052341e93ef80b9e0.jpg https://graph.org/file/79fe451891a16f3f2b313.jpg https://graph.org/file/399ce43058c3aa92bedaf.jpg https://graph.org/file/82fe538b26507e6a48726.jpg https://graph.org/file/084bb001ce9224d7cabf6.jpg https://graph.org/file/9cae7cd54f4c8ff0cea2c.jpg https://graph.org/file/a80fc07fcf50692b4eadd.jpg https://graph.org/file/0e086e40eae077cace948.jpg https://graph.org/file/dee6566eb8def940c2006.jpg https://graph.org/file/b1dc43a6987881a7013d1.jpg https://graph.org/file/b61cd58a36bd77962ffa0.jpg https://graph.org/file/d3631ee5c76eaaf9f9262.jpg https://graph.org/file/c019648df7968f95b807b.jpg ')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
